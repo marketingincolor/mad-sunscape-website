@@ -1,0 +1,163 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}                 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+
+html, body { height: 100%; position: relative; }
+body {
+	font-size: 14px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	line-height: 1.5;
+	/*background: #49748F url(images/main_bgnd.jpg) top repeat-x;*/
+	color: #333;
+}
+
+h2 {
+	font-size: 1.5em;
+	padding-top: 1.15em;
+	margin-bottom: 0.625em;
+	font-weight: normal;
+}
+form .indent {
+	margin-left: 28%;
+}
+
+.page {
+	background: #fff;
+	padding-top: 0;
+	border-top: 0;
+	position: relative;
+	overflow:visible; 
+}
+
+.main {
+	min-height: 400px;
+	text-align: center;
+}
+.main p {	margin-bottom: 1em; }
+
+
+/* BUTTONS */
+.button,
+a.button,
+input[type=submit],
+.button-group {
+	padding: 0.5em 1em;
+	position:relative;
+	top: -1px;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:12px;
+	line-height: 0.95;
+	color:#333;
+	text-shadow:1px 1px 0 #fff;
+	white-space:nowrap;
+	border:none;
+	overflow:visible;
+	background:#ddd;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#fff),to(#e1e1e1));
+	background:-moz-linear-gradient(-90deg,#fff,#e1e1e1);
+	border: 1px solid #cbcbcb;
+	border-bottom:1px solid #ababab;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+/*	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3); */
+	cursor:pointer;
+}
+.button:hover,
+input[type=submit]:hover {
+	-webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	box-shadow:0 1px 4px rgba(0,0,0,0.3);
+	border: 1px solid #ababab;
+	border-bottom: 1px solid #8b8b8b;
+	text-decoration: none;
+}
+.button:active,
+input[type=submit]:active {
+	border: 1px solid #ababab;
+	border-top: 1px solid #8b8b8b;
+	border-left: 1px solid #8b8b8b;
+	background:-webkit-gradient(linear,0% 0,0% 100%,from(#eee),to(#b1b1b1));
+	background:-moz-linear-gradient(-90deg,#ddd,#c1c1c1);
+}
+
+
+/* FORM */
+form div {
+	padding: 5px 0;
+}
+label {
+	display: inline-block;
+	width: 25%;
+	margin-right: 2%;
+	text-align: right;
+}
+label.remember {width: 50%;}
+input[type=text],
+input[type=email],
+input[type=password] {
+	width: 55%;
+	padding: 3px 5px;
+	font-size: 1.125em;
+	color: #666;
+}
+.submits {
+	width: 77%;
+	padding: 40px 50px;
+	text-align: right;
+}
+
+/*OTHER*/
+.profile {
+	text-align:right
+}
+.pagetitle {
+	position: absolute;
+	padding-left:340px;
+	top:-40px;
+}
+.pagetitle h2 {
+	font-size: 36px;
+	font-weight: normal;
+	color:#fff;
+	margin: 0;
+	padding: 0;
+}
+
+.inner h2 {
+    background: none repeat scroll 0 0 #00477F;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0.625em;
+    padding: 0.75em;
+    color:#fff;
+}
+
+.imageblock {
+	position: relative;
+	top:-32px;
+	z-index:5;
+}
+.galleryblock {
+	position: relative;
+	padding-bottom:20px;
+	z-index:5;
+}
+
+.rounded {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
