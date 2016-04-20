@@ -20,8 +20,4 @@ Due Date: ongoing
 Completion Date: ongoing
 
 ####Notes
-<<<<<<< HEAD
 * Site is continually managed by MIC for Madico
-=======
-* Site is continually managed by MIC for Madico
->>>>>>> ee4041f39001bf45b53f37e8657e15a3dd1c617c
