@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	
+
 	<title><?php echo $page_title; ?> - <?php echo config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php Assets::add_css('960','screen'); ?>
 	<?php echo Assets::css(); ?>
@@ -13,7 +13,7 @@
 <body>
 
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -27,7 +27,7 @@
 		<div class="main grid_12">
 			<br />
 			<div class="videoblock" style="min-height:328px;">
-			
+
 				<?php if($this->uri->segment(1) == 'why-sunscape'): ?>
 					<img src="./uploads/woman-reading-book.jpg" alt="" />
 				<?php elseif($this->uri->segment(1) == 'provide-comfort'): ?>
@@ -44,7 +44,7 @@
 				<!-- <img src="./uploads/video.jpg" alt="" /> --><br clear="all" />
 			</div>
 			<br />
-			
+
 			<div class="pagetitle">
 			<?php if (strlen($page_title) < 16) :?>
 				<h2><?php echo $page_title; ?></h2>
@@ -52,9 +52,9 @@
 				<h2 style="font-size:28px;"><?php echo $page_title; ?></h2>
 			<?php endif; ?>
 			</div>
-			
-			
-			<?php  
+
+
+			<?php
 				// acessing our userdata cookie
 				$cookie = unserialize($this->input->cookie($this->config->item('sess_cookie_name')));
 				$logged_in = isset ($cookie['logged_in']);
@@ -62,17 +62,17 @@
 
 				if ($logged_in) : ?>
 			<!-- <div class="profile">
-				<a href="<?php echo site_url();?>">Home</a> | 
-				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> | 
+				<a href="<?php echo site_url();?>">Home</a> |
+				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> |
 				<a href="<?php echo site_url('logout');?>">Logout</a>
 			</div> -->
 			<?php endif;?>
-			
-			<?php echo isset($content) ? $content : Template::yield(); ?>
-			
+
+			<?php echo isset($content) ? $content : Template::yield_content(); ?>
+
 			<br clear="both" /><br />
 		</div>	<!-- /main -->
-		
+
 	<?php echo theme_view('footer'); ?>
 	<div id="contact">&nbsp;</div>
 	</div>	<!-- /page -->

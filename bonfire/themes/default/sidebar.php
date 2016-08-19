@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	
+
 	<title><?php echo $page_title; ?> - <?php echo config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php Assets::add_css('960','screen'); ?>
 	<?php echo Assets::css(); ?>
@@ -12,9 +12,9 @@
 	<?php echo Assets::external_js('js/jquery.ad-gallery.js'); ?>
 </head>
 <body>
-
+<?php echo $google_analytics; ?>
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -31,7 +31,7 @@
 				<h2><?php echo $page_title; ?></h2>
 			</div>
 
-			<?php  
+			<?php
 				// acessing our userdata cookie
 				$cookie = unserialize($this->input->cookie($this->config->item('sess_cookie_name')));
 				$logged_in = isset ($cookie['logged_in']);
@@ -39,17 +39,17 @@
 
 				if ($logged_in) : ?>
 			<!-- <div class="profile">
-				<a href="<?php echo site_url();?>">Home</a> | 
-				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> | 
+				<a href="<?php echo site_url();?>">Home</a> |
+				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> |
 				<a href="<?php echo site_url('logout');?>">Logout</a>
 			</div> -->
 			<?php endif;?>
-			
+
 			<div class="grid_8 alpha">
 				<?php Template::block('gallery'); ?>
-				<div><?php echo isset($content) ? $content : Template::yield(); ?></div>
+				<div><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 			</div>
-			
+
 			<div class="grid_4 omega">
 
                 <?php
@@ -92,10 +92,10 @@
                 ?>
 
 			</div>
-			
+
 			<br clear="both" /><br />
 		</div>	<!-- /main -->
-		
+
 	<?php echo theme_view('footer'); ?>
 	<div id="contact">&nbsp;</div>
 	</div>	<!-- /page -->
@@ -139,6 +139,6 @@
 
         });
     </script>
-<?php echo $google_analytics; ?>
+<?php //echo $google_analytics; ?>
 </body>
 </html>

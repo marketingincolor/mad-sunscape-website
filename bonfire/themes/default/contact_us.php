@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	
+
 	<title><?php echo $page_title; ?> - <?php echo config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php Assets::add_css('960','screen'); ?>
 	<?php echo Assets::css(); ?>
@@ -16,9 +16,9 @@
 	</style>
 </head>
 <body><a name="contact"></a>
-
+<?php echo $google_analytics; ?>
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -40,7 +40,7 @@
 						</p>
 						<br />
 						<p style="font-size:14px; font-weight:bold; color:#fff; margin-bottom:14px;">
-							If you need help choosing a dealer or have any other questions, please contact the Sunscape manufacturing 
+							If you need help choosing a dealer or have any other questions, please contact the Sunscape manufacturing
 							offices:
 						</p>
 						<div style="padding:0; width:50%; float:left; text-align:center;">
@@ -65,7 +65,7 @@
 				<img src="images/grfx_photo_contactus.jpg" width="460px" style="margin:10px 0px;">
 				<br />
 			</div>
-			
+
 			<div class=" grid_8 alpha" id="togglebox_2">
 				<div class="dkbluebox rounded">
 					<div>
@@ -83,7 +83,7 @@
 				</div>
 				<br />
 				<div class="bluebox rounded">
-					<div><?php echo isset($content) ? $content : Template::yield(); ?></div>
+					<div><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 				</div>
 			</div>
 
@@ -153,10 +153,10 @@
 
                 </div>
 			</div>
-			
+
 			<br clear="both" /><br />
 		</div>	<!-- /main -->
-		
+
 	<?php echo theme_view('footer'); ?>
 	<div id="contact">&nbsp;</div>
 	</div>	<!-- /page -->
@@ -172,7 +172,7 @@
             $('#side-inner-us').show();
             $('#side-inner-ca').hide();
 		};
-		
+
         //select the a tag with name equal to revealer
         $('a[name=revealer]').click(function(e) {
             //Cancel the link behavior
@@ -208,8 +208,8 @@
 
 	});
 	</script>
-	
 
-<?php echo $google_analytics; ?>
+
+<?php //echo $google_analytics; ?>
 </body>
 </html>

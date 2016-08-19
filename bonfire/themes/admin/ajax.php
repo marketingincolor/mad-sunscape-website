@@ -1,7 +1,7 @@
 <div class="scrollable" id="ajax-scroller" style="margin: 18px 0 36px 0">
-	<?php 
+	<?php
 		echo Template::message();
-		echo Template::yield(); 
+		echo Template::yield_content(); 
 	?>
 	<br/>
 </div>
@@ -19,7 +19,7 @@
 	$('form.ajax-form').ajaxForm({
 		target: '#content',
 	});
-	
+
 	/*
 		AJAX Setup
 	*/

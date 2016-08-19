@@ -4,16 +4,16 @@
 	<meta charset="UTF-8" />
 	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 	<title><?php echo $page_title; ?> - <?php echo config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php Assets::add_css('960','screen'); ?>
 	<?php echo Assets::css(); ?>
 	<?php echo Assets::external_js('js/jquery-1.6.4.min.js'); ?>
 </head>
 <body>
-
+<?php echo $google_analytics; ?>
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -30,7 +30,7 @@
 			<div class="title">
 				<h2><?php echo $page_title; ?></h2>
 			</div>
-			<?php  
+			<?php
 				// acessing our userdata cookie
 				$cookie = unserialize($this->input->cookie($this->config->item('sess_cookie_name')));
 				$logged_in = isset ($cookie['logged_in']);
@@ -38,19 +38,19 @@
 
 				if ($logged_in) : ?>
 			<!-- <div class="profile">
-				<a href="<?php echo site_url();?>">Home</a> | 
-				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> | 
+				<a href="<?php echo site_url();?>">Home</a> |
+				<a href="<?php echo site_url('users/profile');?>">Edit Profile</a> |
 				<a href="<?php echo site_url('logout');?>">Logout</a>
 			</div> -->
 			<?php endif;?>
-			
+
 			<div class="grid_16 alpha">
-				<div><?php echo isset($content) ? $content : Template::yield(); ?></div>
+				<div><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 			</div>
-			
+
 			<br clear="both" /><br />
 		</div>	<!-- /main -->
-		
+
 	<div style="clear:both;"></div>
 
     <div class="foot"><br />
@@ -60,6 +60,6 @@
 	</div>	<!-- /page -->
 	<br />
 	<div id="debug"></div>
-<?php echo $google_analytics; ?>
+<?php //echo $google_analytics; ?>
 </body>
 </html>

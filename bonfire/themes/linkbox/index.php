@@ -5,7 +5,7 @@
 	<meta property="og:description"
           content="Sunscape Window Films celebrate everything we love about the sun, while creating a safe, energy-efficient environment that captivates as well as it protects. Your family will enjoy cooler summers and warmer winters, along with the benefits of reduced glare and UV exposure, in a superior window film product that lasts for a lifetime."/>
 	<title><?php echo $user_busname.' - '.$user_city.', '.$user_state.' - '.config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php echo Assets::css('screen','screen', true); ?>
 	<?php echo Assets::css('960','screen', true); ?>
@@ -51,7 +51,7 @@
 #boxes label {
 	margin-bottom:15px;
 	vertical-align: top;
-	
+
 }
 .hightlight {
     border:2px solid #9F1319;
@@ -84,7 +84,7 @@
 	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=308562475865736";
 	  fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
-  
+
 </script>
 
 <div id="fbsneak">Sunscape Window Films celebrate everything we love about the sun, while creating a safe, energy-efficient environment that captivates as well as it protects. Your family will enjoy cooler summers and warmer winters, along with the benefits of reduced glare and UV exposure, in a superior window film product that lasts for a lifetime.</div>
@@ -96,10 +96,10 @@
 		<img src="<?php echo base_url(); ?>bonfire/themes/linkbox/images/btn_close.png" id="closex">
 		<div id="actual">
 			<img src="<?php echo base_url(); ?>bonfire/themes/admin/images/grfx_admin_logo.png" width="140">
-			<p>For more information about Sunscape Window Films and our services, 
-			please complete and submit the form below. 
-			<b>With your inquiry, you'll also be able to download a free report from 
-			IWFA (International Window Film Association) - "Window Film: Surprising 
+			<p>For more information about Sunscape Window Films and our services,
+			please complete and submit the form below.
+			<b>With your inquiry, you'll also be able to download a free report from
+			IWFA (International Window Film Association) - "Window Film: Surprising
 			Facts You Need To Know."</b></p>
 			<br />
 			<form>
@@ -131,7 +131,7 @@
         </div>
 		<div id="ractual" style="display:none;">
 			<img src="<?php echo base_url(); ?>bonfire/themes/admin/images/grfx_admin_logo.png" width="140">
-			<p>Thank you for your inquiry! We will contact you at our earliest opportunity. In the meantime, please feel free to 
+			<p>Thank you for your inquiry! We will contact you at our earliest opportunity. In the meantime, please feel free to
 			<b>download this FREE report</b> (optional).</p>
 			<br />
 			<p style="text-align:center;"><a href="../uploads/IWFA-Booklet.pdf"><img src="../images/btn_download.png"></a></p>
@@ -142,12 +142,12 @@
 		</div>
     </div>
 
-    <!-- Do not remove div#mask, because you'll need it to fill the whole screen --> 
+    <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->
     <div id="mask"></div>
-</div>	
+</div>
 
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -157,10 +157,10 @@
 		<div class="nav grid_4">
 			<?php Template::block('navbar', 'home/lbx_nav'); ?>
 		</div>
-		
+
 		<div class="main grid_8">
 			<div class="card whitebox">
-				
+
 				<div class="cardphoto">
 					<img src="<?php echo base_url(); ?><?php echo ($user_image ? $user_image : 'images/grfx_photo_dealer.jpg' ); ?>"><br />
 					<?php if ($user_address != ' ') { ?>
@@ -168,34 +168,34 @@
 					<?php } ?>
 					<?php echo anchor('/contact-us', 'Find a Dealer closer to you','style="color:#bbb;"'); ?>
 				</div>
-					
+
 				<?php Template::block('address'); ?>
-				
+
 			</div>
 			<div class="vcard whitebox">
-			
+
 				<p style="float:left;">
 				<a href="http://twitter.com/home/?status=Looking+for+a+quality+window+film+installer+in+<?php echo str_replace(' ','+',$user_city) ?>?+<?php echo current_url(); ?>"  target="_blank" style="display:inline-block; height:22px;"><img src="<?php echo base_url(); ?>images/twitter_icon.png"></a>
 				<fb:like href="http://www.sunscapefilms.com/<?php echo $get_vcard; ?>" send="true" layout="button_count" width="150" show_faces="false" style="top:-4px;"></fb:like>
 				</p>
 				<p style="float:right;"><?php echo anchor('vcard/'.$get_vcard.'', 'Download Vcard','style="color:#bbb;"'); ?>&nbsp;<img src="../images/btn_vcard.png" style="vertical-align: middle;"></p>
 			</div>
-					
-				<?php echo isset($content) ? $content : Template::yield(); ?>
+
+				<?php echo isset($content) ? $content : Template::yield_content(); ?>
 
 		</div>	<!-- /main -->
 		<div class="right grid_4 blackbox">
-			
+
 			<!-- #dialog is the id of a DIV defined in the code below href="#dialog" -->
 			<a href="" name="modal"><img src="<?php echo base_url(); ?>images/btn_contact.jpg"></a>
 			<br /><br />
 			<p style="text-align:left; margin:10px 10px; font-weight:bold;">FREE DOWNLOAD:<br />Contact Us Now and Receive A Free Report From IWFA (International Window Film Association) - "Window Film: Surprising Facts You Need To Know"</p>
 			<p style="text-align:left; margin:10px 10px;">
 			<a href="" name="modal"><img src="<?php echo base_url(); ?>images/grfx_whitepaper.jpg" style="float:left;"></a>
-			Through advanced engineering, today's window films give you energy savings, a neutral carbon footprint, UV blocking, 
+			Through advanced engineering, today's window films give you energy savings, a neutral carbon footprint, UV blocking,
 			glare reduction and security benefits, along with a wide range of aesthetic possibilities. <a href="" name="modal" style="color:white;"><strong>Download it here.</strong></a></p>
 			<!-- this is the right column -->
-			
+
 		</div>
 	<?php echo theme_view('footer'); ?>
 
@@ -203,7 +203,7 @@
 	<br />
 	<div id="debug"></div>
 
-	
+
 
 	<script>
 	$(document).ready(function() {
@@ -250,7 +250,7 @@
             //transition effect
             $(id).fadeIn(2000);
         });
-         
+
         //if close button is clicked
         $('.window .close').click(function (e) {
             //Cancel the link behavior
@@ -266,20 +266,20 @@
         	$('#actual').show();
         	$('#ractual').hide();
         });
-        
+
         //if mask is clicked
         $('#mask').click(function () {
         	$('form')[0].reset();
             $(this).hide();
             $('.window').hide();
         });
-        
+
         //if closex is clicked
         $('#closex').click(function () {
         	$('form')[0].reset();
             $('#mask, .window').hide();
         });
-        
+
 		//if submit button is clicked
         $('#submit').click(function () {
             //Get the data from all the fields
@@ -306,7 +306,7 @@
 				email.addClass('hightlight');
 				return false;
 			} else email.removeClass('hightlight');
-            
+
     	    $.ajax({
     	        url : 'submit',
     	        type : 'post',
@@ -347,9 +347,9 @@
             return false;
         });
 
-	    
+
         $('.sadfdsf').click(function (event){
-        	 
+
             var url = $(this).attr("href");
             var windowName = "popUp";//$(this).attr("name");
             var windowSize = windowSizeArray[$(this).attr("rel")];
@@ -360,7 +360,7 @@
 
         });
 
-	    
+
 	});
 
 	</script>

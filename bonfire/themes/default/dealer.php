@@ -16,7 +16,7 @@
 	</style>
 </head>
 <body><a name="contact"></a>
-
+<?php echo $google_analytics; ?>
 	<div class="page container_16">
 	
 		<!-- Header -->
@@ -93,6 +93,6 @@
 	<br />
 	<div id="debug"></div>
 
-<?php echo $google_analytics; ?>
+<?php //echo $google_analytics; ?>
 </body>
 </html>

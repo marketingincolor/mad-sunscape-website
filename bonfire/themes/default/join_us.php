@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	
+
 	<title><?php echo $page_title; ?> - <?php echo config_item('site.title'); ?></title>
-	
+
 	<link rel="shortcut icon" href="<?php echo site_url();?>favicon.ico">
 	<?php Assets::add_css('960','screen'); ?>
 	<?php echo Assets::css(); ?>
 	<?php echo Assets::external_js('js/jquery-1.6.4.min.js'); ?>
 
 </head>
-<body><a name="contact"></a>
+<body><a name="contact"></a><?php echo $google_analytics; ?>
 
 	<div class="page container_16">
-	
+
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
@@ -66,22 +66,22 @@
 
                     <div id="side-outer">
                         <img src="./images/grfx_side_joinus.jpg" /><br />
-	                    <div id="side-inner"><?php echo isset($content) ? $content : Template::yield(); ?></div>
+	                    <div id="side-inner"><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 
                     </div>
 
                 </div>
 			</div>
-			
+
 			<br clear="both" /><br />
 		</div>	<!-- /main -->
-		
+
 	<?php echo theme_view('footer'); ?>
 	<div id="contact">&nbsp;</div>
 	</div>	<!-- /page -->
 	<br />
 	<div id="debug"></div>
 
-<?php echo $google_analytics; ?>
+<?php //echo $google_analytics; ?>
 </body>
 </html>

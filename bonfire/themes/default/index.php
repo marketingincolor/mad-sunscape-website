@@ -17,7 +17,7 @@
 	<div class="page container_16">
 			<div class="main grid_8 prefix_4">
 				<img src="./bonfire/themes/admin/images/grfx_admin_logo.png">
-				<div class="rounded inner"><?php echo isset($content) ? $content : Template::yield(); ?></div>
+				<div class="rounded inner"><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 			</div>
 
 	</div>	<!-- /page -->
@@ -36,7 +36,7 @@
 	<?php echo Assets::external_js('js/jquery-1.6.4.min.js'); ?>
 </head>
 <body>
-
+<?php echo isset($google_analytics) ? $google_analytics : ''; ?>
 	<div class="page container_16">
 	
 		<!-- Header -->
@@ -68,7 +68,7 @@
 			<?php endif;?>
 			
 			<div class="grid_6 alpha">
-				<div><?php echo isset($content) ? $content : Template::yield(); ?></div>
+				<div><?php echo isset($content) ? $content : Template::yield_content(); ?></div>
 			</div>
 			
 			<div class="newsbox grid_6 omega">
@@ -95,7 +95,7 @@
 	
 	<br />
 	<div id="debug"></div>
-<?php echo isset($google_analytics) ? $google_analytics : ''; ?>
+<?php //echo isset($google_analytics) ? $google_analytics : ''; ?>
 </body>
 </html>
 <?php endif;?>
