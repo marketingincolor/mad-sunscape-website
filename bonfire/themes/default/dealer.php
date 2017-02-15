@@ -40,6 +40,9 @@
 						<p style="font-size:16px; margin-bottom:14px;">
 							For residential and commercial property applications, you can find Sunscape Window Films dealers throughtout the U.S. and Canada. Scroll and click on our listings below to find the dealer nearest you!
 						</p>
+						<p style="font-size:16px; margin-bottom:14px;">
+							Or <a href="http://dealerdirectory.madico.com/" target="_blank">click here to view</a> all Madico dealers.
+						</p>
 					</div>
 				</div>
 				<br />
