@@ -203,7 +203,7 @@
 				</li>
 				<li>
 					<a href="./uploads/sunscape-gallery-images02_lg.jpg">
-						<img src="./uploads/sunscape-gallery-images02_tn.jpg" alt="Rejects up to 83% of the summer sun's solar energy to reduce air conditioning costs">
+						<img src="./uploads/sunscape-gallery-images02_tn.jpg" alt="Rejects up to 80% of the summer sun's solar energy to reduce air conditioning costs">
 					</a>
 				</li>
 				<li>
