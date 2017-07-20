@@ -61,7 +61,7 @@
                 {?>
                 <div>
 
-                    <style>
+                    <!--<style>
                         #showbar { text-align:center; width:100%; font-weight:bold; color:#000; }
                         #showbar a { color:#000; }
                         a.line { text-decoration:underline; }
@@ -70,20 +70,20 @@
                         #side-inner-us, #side-inner-ca { padding-left:10px; max-height:540px; width:210px; overflow:auto; color:#2C4F69; }
                         #side-inner-us a, #side-inner-ca a { color:#2C4F69; text-decoration:underline; margin-bottom:3px; font-size:11px; }
                         #side-inner-us p, #side-inner-ca p { font-size:12px; }
-                    </style>
+                    </style>-->
 
                     <div id="side-outer">
-                        <img src="./uploads/locator.jpg" /><br />
-                        <div id="showbar">
+                        <a href="http://dealerdirectory.madico.com/" target="_blank"><img src="./uploads/Dealer-Directory-Skyscaper-Ad.jpg" style="width:100%" /></a><br />
+                        <!--<div id="showbar">
                             <a href="#" name="showus" class="noline">United States</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" name="showca" class="line">Canada</a><hr style="width:90%;">
                         </div>
                         <div id="side-inner-us">
-                            <?php Template::block('sidebar', 'home/us_list_sidebar', $us_data_list); ?>
+                            <?php //Template::block('sidebar', 'home/us_list_sidebar', $us_data_list); ?>
                         </div>
 
                         <div id="side-inner-ca" style="display:none;">
-                            <?php Template::block('sidebar', 'home/ca_list_sidebar', $ca_data_list); ?>
-                        </div>
+                            <?php //Template::block('sidebar', 'home/ca_list_sidebar', $ca_data_list); ?>
+                        </div>-->
                     </div>
 
                 </div>
