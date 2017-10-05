@@ -10,10 +10,16 @@
 	<div class="grid_4 omega" style="padding-left:30px;">
 		<h3>Follow Us on</h3>
 		<div style="margin-top:10px;">
-			<a style="color:#fff;" href="<?php echo $facebook_link; ?>" target="_new"><img src="<?php echo site_url();?>images/fb_icon.png" style="vertical-align:middle;"> facebook.com/sunscapefilms</a>
+			<a style="color:#fff;" href="<?php echo $facebook_link; ?>" target="_new"><img src="<?php echo site_url();?>images/fb_icon.png" style="vertical-align:middle;">Madico Facebook</a>
 		</div>
 		<div style="margin-top:10px;">
-			<a style="color:#fff;" href="<?php echo $twitter_link; ?>" target="_new"><img src="<?php echo site_url();?>images/twitter_icon.png" style="vertical-align:middle;"> @sunscapefilms</a>
+			<a style="color:#fff;" href="<?php echo $twitter_link; ?>" target="_new"><img src="<?php echo site_url();?>images/twitter_icon.png" style="vertical-align:middle;">Madico Twitter</a>
+		</div>
+		<div style="margin-top:10px;">
+			<a style="color:#fff;" href="https://www.linkedin.com/company/madico-window-films" target="_new"><img src="<?php echo site_url();?>images/li-icon.png" style="vertical-align:middle;">Madico LinkedIn</a>
+		</div>
+		<div style="margin-top:10px;">
+			<a style="color:#fff;" href="https://plus.google.com/109912744876993567602" target="_new"><img src="<?php echo site_url();?>images/gp-icon.png" style="vertical-align:middle;">Madico Google+</a>
 		</div>
 	</div>
 	
