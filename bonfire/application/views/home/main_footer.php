@@ -25,6 +25,6 @@
 	
 	<br clear="all" />
 	
-	<p style="float: right; margin-right: 40px;">&copy; 2012-<?php echo date("Y") ?> Madico, Inc. &nbsp; <?php echo anchor('/terms-conditions', 'Terms and Conditions'); ?> &nbsp; <?php echo anchor('/privacy-policy', 'Privacy Policy'); ?> &nbsp; <?php echo anchor('/login', 'WebNet Login'); ?> &nbsp; <a href="https://hub.hubcentrix.com/login.php?company=Madico" target="_blank">Brand Hub</a></p>
+	<p style="float: right; margin-right: 40px;">&copy; 2012-<?php echo date("Y") ?> Madico, Inc. &nbsp; <?php echo anchor('/terms-conditions', 'Terms and Conditions'); ?> &nbsp; <?php echo anchor('/privacy-policy', 'Privacy Policy'); ?> &nbsp;  <a href="https://hub.hubcentrix.com/login.php?company=Madico" target="_blank">Brand Hub</a></p>
 	
 </div>
