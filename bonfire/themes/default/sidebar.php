@@ -18,7 +18,7 @@
 		<!-- Header -->
 		<?php echo theme_view('header'); ?>
 		<div class="logo">
-			<a href="./"><img src="./bonfire/themes/default/images/grfx_logo.png" style="padding:4px 0px 0px 28px;"></a>
+			<a href="./"><img src="/bonfire/themes/default/images/grfx_logo.png" style="padding:4px 0px 0px 28px; width:370px;"></a>
 		</div>
 		<div class="nav grid_4">
 			<?php Template::block('navbar', 'home/main_nav'); ?>
@@ -73,7 +73,7 @@
                     </style>-->
 
                     <div id="side-outer">
-                        <a href="http://dealerdirectory.madico.com/" target="_blank"><img src="./uploads/Dealer-Directory-Skyscaper-Ad.jpg" style="width:100%" /></a><br />
+                        <a href="http://dealerdirectory.madico.com/" target="_blank"><img src="/uploads/Dealer-Directory-Skyscaper-Ad.jpg" style="width:100%" /></a><br />
                         <!--<div id="showbar">
                             <a href="#" name="showus" class="noline">United States</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" name="showca" class="line">Canada</a><hr style="width:90%;">
                         </div>
